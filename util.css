@@ -123,6 +123,16 @@
     --bg-color: 253, 243, 244;
     background-color: rgb(var(--bg-color));
 }
+.bg_pink {
+    --bg-color: 226, 42, 90;
+    background-color: rgb(var(--bg-color));
+}
+
+.bg_pink_pastel {
+    --bg-color: 255, 197, 211;
+    background-color: rgb(var(--bg-color));
+}
+
 
 
 
@@ -158,6 +168,9 @@
 .color_golden {
     color: #B7A46C;
 }
+
+
+
 .d_block{
     display: block;
 }
@@ -1506,6 +1519,16 @@
     background-repeat: no-repeat;
     background-size: auto;
 }
+
+.bgr_cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;  opcional: fija la imagen */
+    width: 100%;
+
+}
+
 .bgimg_patron {
     background-position: center;
     background-repeat: repeat;
