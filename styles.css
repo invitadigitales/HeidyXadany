@@ -424,10 +424,11 @@ body {
 
 
 .ada {
-  position: relative; /* NO fixed */
-  display: block;
-  margin: 50px auto;
-  z-index: 5000;
+
+    position: relative; /* NO fixed */
+    display: block;
+    margin: 50px auto;
+    z-index: 5000;
 }
 
 .ada4{
