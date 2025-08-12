@@ -109,6 +109,14 @@
     background-color: rgb(var(--bg-color));
 }
 
+.bg_transparent {
+    --bg-color: 255, 0, 0; /* Rojo */
+    background-color: rgba(var(--bg-color), 0); /* Completamente transparente */
+
+    border: 0px !important;
+}
+
+
 .bg_black {
     --bg-color: 0, 0, 0; /* Negro */
     background-color: rgb(var(--bg-color));
