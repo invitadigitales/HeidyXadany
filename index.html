@@ -46,12 +46,7 @@
     <div class="content">
 
 
-        <img src="ada4.png" class="ada ada4 no_select">
-        <div class="trigger-ada trigger no_select" style=" height: 800px;"></div>
-        <img src="ada2.png" class="ada ada2 no_select">
-        <div class="trigger-ada2 trigger no_select" style=" height: 1500px;"></div>
-        <img src="ada1.png" class="ada ada3 no_select">
-        <div class="trigger-ada3 trigger no_select" style="top: 1000; height: 1500px;"></div>
+
 
 
         <div class="bgr_ini">
@@ -72,7 +67,12 @@
 
         
 
-
+        <img src="ada4.png" class="ada ada4 no_select">
+        <div class="trigger-ada trigger no_select" style=" height: 5800px;"></div>
+        <img src="ada2.png" class="ada ada2 no_select">
+        <div class="trigger-ada2 trigger no_select" style=" height: 6500px;"></div>
+        <img src="ada1.png" class="ada ada3 no_select">
+        <div class="trigger-ada3 trigger no_select" style="top: 1000; height: 6500px;"></div>
 
         <center class="py_50 px_60 bg_pink_pastel">
             <h3 class="font_charm">Su Majestad, Heidy, solicita su presencia en la celebración de su XV Aniversario. Una noche mágica en su honor</h3>
@@ -498,8 +498,8 @@ gsap.to(".ada2", {
 gsap.set(".ada3", { opacity: 0 });
 ScrollTrigger.create({
   trigger: ".trigger-ada3",
-  start: "top 10%",
-  end: "bottom 50%",
+  start: "top 20%",
+  end: "bottom 40%",
   onEnter: () => gsap.to(".ada3", { opacity: 1, duration: 0.3 }),
   onLeave: () => gsap.to(".ada3", { opacity: 0, duration: 0.3 }),
   onEnterBack: () => gsap.to(".ada3", { opacity: 1, duration: 0.3 }),
@@ -510,8 +510,8 @@ gsap.to(".ada3", {
   scale: 1.2,
   scrollTrigger: {
     trigger: ".trigger-ada3",
-    start: "top 10%", 
-    end: "bottom 50%", // Usa la altura real del trigger (1500px)
+    start: "top 20%", 
+    end: "bottom 40%", // Usa la altura real del trigger (1500px)
     scrub: true,
     onUpdate: self => {
       const zigzag = Math.sin(self.progress * 15) * 40;
