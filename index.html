@@ -146,33 +146,12 @@
                                     <span>12 de septiembre del 2025 5:00 pm.</span><br>
                                     <strong>Dirección:</strong>
                                     <span>San Martin 25, Jardines de Santiago, 72590 Heroica Puebla de Zaragoza, Pue.</span>
-                                </div>
-                                <button class="my_btn bg_pink py_10 px_30 mt_10 rounded color_white"
-                                        data-bs-toggle="modal" data-bs-target="#ModalMapa1">Ver mapa</button>
+                                </div><br>
+                                <a href="https://maps.app.goo.gl/REKpRWpVKL3U5UHZA" class="my_btn bg_pink py_10 px_30 mt_10 rounded color_white no_link">Ver mapa</a>
                             </div>
 
                         </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="ModalMapa1">
-                          <div class="modal-dialog modal-lg">
-                            <div class="text_right mb_15" style="pointer-events: auto;">
-                                <button class="my_btn bg_pink color_white rounded " data-bs-dismiss="modal" aria-label="Close">
-                                    <i class="material-icons p_5">close</i>
-                                </button>
-                            </div>
-                            <div class="modal-content">
-                                <div class="rounded" id="map1" style="height: 500px; width: 100%;"></div>
-                            </div>
-                            <a href="https://maps.app.goo.gl/REKpRWpVKL3U5UHZA" style="pointer-events: auto;">
-                                <div class="text_right mt_15">
-                                    <button class="my_btn bg_pink color_white rounded">
-                                        <h4 class="py_5 px_10">ir a maps</h4>
-                                    </button>
-                                </div>
-                            </a>
-                          </div>
-                        </div>
-
+       
 
 
                         <div class="col-md-6 font_times">
@@ -185,32 +164,12 @@
                                     <span>12 de septiembre del 2025 6.30 pm.</span><br>
                                     <strong>Dirección:</strong>
                                     <span>San Miguel Mz 3 Lt 5, La Concepción Sur, 72590 Heroica Puebla de Zaragoza, Pue.</span>
-                                </div>
-                                <button class="my_btn bg_pink py_10 px_30 mt_10 rounded color_white"
-                                        data-bs-toggle="modal" data-bs-target="#ModalMapa2">Ver mapa</button>
+                                </div><br>
+                                <a href="https://maps.app.goo.gl/qVrRtuYk1Gfpw24j8" class="my_btn bg_pink py_10 px_30 mt_10 rounded color_white no_link" >Ver mapa</a>
                             </div>
 
                         </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="ModalMapa2">
-                          <div class="modal-dialog modal-lg">
-                            <div class="text_right mb_15" style="pointer-events: auto;">
-                                <button class="my_btn bg_pink color_white rounded " data-bs-dismiss="modal" aria-label="Close">
-                                    <i class="material-icons p_5">close</i>
-                                </button>
-                            </div>
-                            <div class="modal-content">
-                                <div class="rounded" id="map2" style="height: 500px; width: 100%;"></div>
-                            </div>
-                            <a href="https://maps.app.goo.gl/qVrRtuYk1Gfpw24j8" style="pointer-events: auto;">
-                                <div class="text_right mt_15">
-                                    <button class="my_btn bg_pink color_white rounded">
-                                        <h4 class="py_5 px_10">ir a maps</h4>
-                                    </button>
-                                </div>
-                            </a>
-                          </div>
-                        </div>
+      
 
 
 
@@ -486,9 +445,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2qL-toVgqqJcEWrrOQ7rQu6QX_ZfbHeI&callback=initMap&loading=async" async defer></script>
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
@@ -502,34 +458,7 @@ audio.volume = 0.5;
 
 
 
-let map = null;
-function initMap() {
-    if (!map) {
 
-      map = new google.maps.Map(document.getElementById('map1'), {
-        center: { lat: 18.9823579, lng: -98.2085608 },
-        zoom: 16 
-      });
-      new google.maps.Marker({
-        position: { lat: 18.9823579, lng: -98.2085608 },
-        map: map,
-        title: 'Salón Los Arcos'
-      });
-
-      map = new google.maps.Map(document.getElementById('map2'), {
-        center: { lat: 18.962979, lng: -98.2259347 },
-        
-        zoom: 16 
-      });
-      new google.maps.Marker({
-        
-        position: { lat: 18.962979, lng: -98.2259347 },
-        map: map,
-        title: 'Parroquia La Trinidad Sanctorum'
-      });
-
-    }
-}
 
 
 var targetDate = new Date("Sep 12, 2025 08:00:00").getTime();
